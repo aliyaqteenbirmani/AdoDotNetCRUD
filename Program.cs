@@ -118,7 +118,7 @@ namespace AdoDotNet
             }; 
             
             const string ConnectionString = @"Data Source=DESKTOP-Q6T8H7G;Initial Catalog=TestDB;Integrated Security=true;TrustServerCertificate=true";
-            //InsertData(connectionString, customers);
+ 
             try
             {
                 InsertData(ConnectionString,customers);
