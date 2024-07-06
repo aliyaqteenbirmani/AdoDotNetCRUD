@@ -107,32 +107,32 @@ namespace AdoDotNet
             }
         }
 
-        static void Main(string[] args)
-        {
-            Customer[] customers = new Customer[]
-            {
-                new Customer { CustomerID = 16, Name = "Jessica Davis", Email = "jessica@gmail.com", ContactNo = "032000327", PostCode = 32203 },
-                new Customer { CustomerID = 17, Name = "John Doe", Email = "john@gmail.com", ContactNo = "032000328", PostCode = 32204 },
-                new Customer { CustomerID = 18, Name = "Emily Johnson", Email = "emily@gmail.com", ContactNo = "032000329", PostCode = 32205 },
-                new Customer { CustomerID = 19, Name = "Michael Brown", Email = "michael@gmail.com", ContactNo = "032000330", PostCode = 32206 }
-            }; 
+        //static void Main(string[] args)
+        //{
+        //    Customer[] customers = new Customer[]
+        //    {
+        //        new Customer { CustomerID = 16, Name = "Jessica Davis", Email = "jessica@gmail.com", ContactNo = "032000327", PostCode = 32203 },
+        //        new Customer { CustomerID = 17, Name = "John Doe", Email = "john@gmail.com", ContactNo = "032000328", PostCode = 32204 },
+        //        new Customer { CustomerID = 18, Name = "Emily Johnson", Email = "emily@gmail.com", ContactNo = "032000329", PostCode = 32205 },
+        //        new Customer { CustomerID = 19, Name = "Michael Brown", Email = "michael@gmail.com", ContactNo = "032000330", PostCode = 32206 }
+        //    }; 
             
-            const string ConnectionString = @"Data Source=DESKTOP-Q6T8H7G;Initial Catalog=TestDB;Integrated Security=true;TrustServerCertificate=true";
+        //    const string ConnectionString = @"Data Source=DESKTOP-Q6T8H7G;Initial Catalog=TestDB;Integrated Security=true;TrustServerCertificate=true";
  
-            try
-            {
-                InsertData(ConnectionString,customers);
-                //UpdateData(ConnectionString);
-                //DeleteData(ConnectionString);
-                ReadData(ConnectionString);
-            }
-            catch (Exception ex)
-            {
+        //    try
+        //    {
+        //        InsertData(ConnectionString,customers);
+        //        //UpdateData(ConnectionString);
+        //        //DeleteData(ConnectionString);
+        //        ReadData(ConnectionString);
+        //    }
+        //    catch (Exception ex)
+        //    {
 
-                Console.WriteLine(ex);
-            }
+        //        Console.WriteLine(ex);
+        //    }
             
-        }
+        //}
 
     }
 }
