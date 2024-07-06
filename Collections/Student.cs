@@ -43,24 +43,38 @@ namespace AdoDotNet.Collections
         {
             return s1.Name.CompareTo(s2.Name);
         }
-        static void Main(string[] args)
-        {
-            Student s1 = new Student { Sid = 103, Name = "Ajay", Class = 10, Marks = 575.00f };
-            Student s2 = new Student { Sid = 106, Name = "Stuart", Class = 10, Marks = 535.00f };
-            Student s3 = new Student { Sid = 104, Name = "Williams", Class = 10, Marks = 592.00f };
-            Student s4 = new Student { Sid = 102, Name = "Venkat", Class = 10, Marks = 453.00f };
-            Student s5 = new Student { Sid = 101, Name = "David", Class = 10, Marks = 512.00f };
-            Student s6 = new Student { Sid = 105, Name = "John", Class = 10, Marks = 498.00f };
-            List<Student> Students = new List<Student>() { s1, s2, s3, s4, s5, s6 };
-            //CompareStudents obj = new CompareStudents();
-            //students.Sort(obj);
-            //students.Sort();
-            //students.Sort(1, 5, obj);
-            //Comparison<Student> obj = new Comparison<Student>(CompareNames);
-            Students.Sort(CompareNames);
-            foreach(Student student in Students)
-                Console.WriteLine(student.Sid+" "+student.Name+" "+student.Class+" "+student.Marks);
+        //static void Main(string[] args)
+        //{
+        //    Student s1 = new Student { Sid = 103, Name = "Ajay", Class = 10, Marks = 575.00f };
+        //    Student s2 = new Student { Sid = 106, Name = "Stuart", Class = 10, Marks = 535.00f };
+        //    Student s3 = new Student { Sid = 104, Name = "Williams", Class = 10, Marks = 592.00f };
+        //    Student s4 = new Student { Sid = 102, Name = "Venkat", Class = 10, Marks = 453.00f };
+        //    Student s5 = new Student { Sid = 101, Name = "David", Class = 10, Marks = 512.00f };
+        //    Student s6 = new Student { Sid = 105, Name = "John", Class = 10, Marks = 498.00f };
+        //    List<Student> Students = new List<Student>() { s1, s2, s3, s4, s5, s6 };
+        //    //CompareStudents obj = new CompareStudents();
+        //    //students.Sort(obj);
+        //    //students.Sort();
+        //    //students.Sort(1, 5, obj);
 
-        }
+        //    // 1st way
+        //    //Comparison<Student> obj = new Comparison<Student>(CompareNames);
+        //    //Students.Sort(obj);
+
+        //    // 2nd way
+        //    //Students.Sort(CompareNames); 
+
+        //    // 3rd way Anonymus method
+        //    //Students.Sort(delegate (Student S1, Student S2)
+        //    //{
+        //    //    return S1.Name.CompareTo(S2.Name);
+        //    //});
+
+        //    // 4th way Lambda Expression
+        //    Students.Sort((S1, S2) => S1.Name.CompareTo(S2.Name));
+        //    foreach(Student student in Students)
+        //        Console.WriteLine(student.Sid+" "+student.Name+" "+student.Class+" "+student.Marks);
+
+        //}
     }
 }
